@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+        .relative {
+            height: 200px;
+            width: 400px;
+            background-color: aqua;
+            position: relative;
+            top: 350px;
+            left: 50px;
+        }
+
+        .absolute {
+            height: 200px;
+            width: 400px;
+            background-color: rgb(225, 0, 187);
+            position: absolute;
+            top: 5px;
+            right: 10px;
+        }
+        .outter {
+          width: 600px;
+          height: 400px;
+          background-color: brown;  
+        }
+        .inner {
+            background-color: #010101;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="relative">
+        This is a relatively positioned element
+    </div>
+    <div class="absolute">
+        This is absolutly positioned element
+    </div>
+    <div class="outter">
+        <div class="inner"></div>
+    </div>
+    
+</body>
+</html>
